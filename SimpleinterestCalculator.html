@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<script type="text/javascript">
+	var p,r,t,si;
+	function calc(f)
+	{
+		p=parseInt(f.pr.value);
+		r=parseInt(f.rate.value);
+		t=parseInt(f.time.value);
+		si=(p*r*t)/100;
+		f.simp.value=si;
+	}
+</script>
+<body>
+<pre><center>
+<form style="border: 3px solid black; background-color: lightgrey;width: 390px; height: 200px; font-style:bold;">
+  Enter Principle   : <input type ="text" name="pr"   style="border: 1px solid black"><br>
+  Enter Rate        : <input type ="text" name="rate" style="border: 1px solid black"><br>
+  Enter No Of Years : <input type ="text" name="time" style="border: 1px solid black"><br>
+  Simple Interest   : <input type ="text" name="simp" style="border: 1px solid black"><br>
+	<input type ="button" name="btn" value="Calculate Si" onclick ="calc(this.form)">
+	</form>
+	</center></pre>
+</body>
+</html>
